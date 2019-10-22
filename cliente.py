@@ -28,11 +28,11 @@ def on_closing(event=None):
     send()
 
 top = tkinter.Tk()
-top.title("Chat multi cast")
+top.title("..::Chat TCP::..")
 
 messages_frame = tkinter.Frame(top)
 my_msg = tkinter.StringVar()  # variable para los mensajes que escriba el usuario
-my_msg.set("Escribe tus mensajes aqui.")
+my_msg.set("Escribe aqui.")
 scrollbar = tkinter.Scrollbar(messages_frame)  # scroll en caso de que los mensajes sean muchos sale
 msg_list = tkinter.Listbox(messages_frame, height=15, width=50, yscrollcommand=scrollbar.set)
 scrollbar.pack(side=tkinter.RIGHT, fill=tkinter.Y)
